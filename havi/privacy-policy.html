@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ebe3ff" />
+<title>Havi · Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --pink-50:#fff6fb;
+    --pink-100:#ffe7f1;
+    --pink-200:#ffd0e3;
+    --pink-300:#ffb1cd;
+    --pink-500:#ff6fa5;
+    --pink-600:#ef518c;
+    --lilac-100:#f4edff;
+    --lilac-200:#ebe3ff;
+    --lilac-400:#b7a3ff;
+    --lilac-500:#8f77ff;
+    --mint-200:#d7f5e7;
+    --mint-400:#67d7aa;
+    --butter-200:#fff4cf;
+    --butter-400:#ffd166;
+    --ink-900:#3b2442;
+    --ink-700:#5d4566;
+    --ink-500:#7e6b87;
+    --ink-300:#b7a9bd;
+    --paper:#fffaf7;
+    --shadow:0 20px 60px -24px rgba(143,119,255,.30), 0 8px 20px -10px rgba(239,81,140,.22);
+    --radius:26px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink-900);
+    background:
+      radial-gradient(1200px 700px at 100% -10%, #ebe3ff 0%, transparent 60%),
+      radial-gradient(900px 600px at 0% 5%, #ffe6f2 0%, transparent 55%),
+      radial-gradient(900px 700px at 50% 100%, #d7f5e7 0%, transparent 55%),
+      linear-gradient(180deg,#f4edff 0%, #fff6fb 55%, #eaf9f1 100%);
+    min-height:100vh;
+    line-height:1.62;
+    overflow-x:hidden;
+  }
+  a{color:var(--lilac-500)}
+  .sky{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+  .blob,.cloud,.heart,.spark{position:absolute;border-radius:999px;filter:blur(0.5px)}
+  .blob{
+    width:520px;height:520px;border-radius:40% 60% 55% 45%/55% 45% 60% 40%;
+    background:radial-gradient(circle at 30% 30%, #dcd2ff, #c2b4ff33 60%, transparent 70%);
+    animation:blob 18s ease-in-out infinite;
+  }
+  .blob.b2{width:440px;height:440px;background:radial-gradient(circle at 60% 40%, #ffd1e6, #ffb1cd33 60%, transparent 70%);animation-duration:24s;animation-direction:reverse}
+  .blob.b3{width:380px;height:380px;background:radial-gradient(circle at 40% 50%, #c8f1de, #67d7aa22 60%, transparent 70%);animation-duration:28s}
+  @keyframes blob{
+    0%,100%{transform:translate(0,0) rotate(0) scale(1)}
+    33%{transform:translate(30px,-25px) rotate(20deg) scale(1.05)}
+    66%{transform:translate(-25px,30px) rotate(-15deg) scale(.98)}
+  }
+  .cloud{
+    background:linear-gradient(180deg,#ffffff 0%,#f4edff 100%);
+    box-shadow:0 20px 40px -24px rgba(239,81,140,.35), inset 0 -6px 0 #ebe3ff;
+    opacity:.9;border-radius:100px;animation:float 14s ease-in-out infinite;
+  }
+  .cloud::before,.cloud::after{content:"";position:absolute;border-radius:999px;background:inherit;box-shadow:inherit}
+  .cloud.c1{width:210px;height:80px;top:10%;right:4%;animation-delay:-3s}
+  .c1::before{width:110px;height:110px;left:30px;top:-40px}
+  .c1::after{width:130px;height:70px;left:110px;top:10px;border-radius:60px}
+  .cloud.c2{width:170px;height:64px;top:20%;left:6%;animation-delay:-5s;animation-duration:20s}
+  .c2::before{width:90px;height:90px;left:20px;top:-32px}
+  .c2::after{width:96px;height:52px;left:90px;top:12px;border-radius:40px}
+  .cloud.c3{width:240px;height:74px;bottom:14%;right:-6%;animation-delay:-2s;animation-duration:22s;transform:scale(.9)}
+  .c3::before{width:120px;height:120px;left:40px;top:-44px}
+  .c3::after{width:140px;height:60px;left:130px;top:10px;border-radius:50px}
+  @keyframes float{
+    0%,100%{transform:translateY(0) translateX(0)}
+    50%{transform:translateY(-14px) translateX(-10px)}
+  }
+  .heart{
+    width:18px;height:18px;background:var(--lilac-500);opacity:.6;
+    transform:rotate(-45deg);border-radius:4px 4px 0 0;animation:heart 9s ease-in-out infinite;
+  }
+  .heart::before,.heart::after{content:"";position:absolute;width:18px;height:18px;background:inherit;border-radius:999px}
+  .heart::before{top:9px;left:0}
+  .heart::after{top:0;left:9px}
+  .h1{top:34%;right:14%;animation-delay:-1s}
+  .h2{top:50%;left:12%;transform:rotate(-45deg) scale(1.25);opacity:.5;background:var(--pink-500);animation-duration:11s;animation-delay:-4s}
+  .h3{bottom:20%;right:40%;transform:rotate(-45deg) scale(.8);opacity:.65;background:var(--mint-400);animation-duration:13s;animation-delay:-6s}
+  @keyframes heart{
+    0%,100%{translate:0 0}
+    50%{translate:0 -16px rotate(4deg)}
+  }
+  .spark{
+    width:14px;height:14px;background:var(--butter-400);
+    clip-path:polygon(50% 0,61% 38%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 38%);
+    filter:drop-shadow(0 2px 6px #ffd166aa);animation:sparkle 6s ease-in-out infinite;
+  }
+  .s1{top:26%;left:20%;animation-delay:-1.3s}
+  .s2{top:42%;right:18%;transform:scale(1.5);animation-delay:-2.8s}
+  .s3{bottom:18%;left:12%;animation-delay:-4s}
+  .s4{bottom:44%;right:28%;animation-delay:-1.9s;transform:scale(.7)}
+  @keyframes sparkle{
+    0%,100%{transform:scale(1) rotate(0);opacity:.9}
+    50%{transform:scale(1.4) rotate(-18deg);opacity:.45}
+  }
+
+  .wrap{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:44px 24px 68px}
+  .badge-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:8px 16px;border-radius:999px;
+    background:#ffffffcc;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    border:1px solid #ffffff99;
+    color:var(--ink-700);font-size:13px;font-weight:600;letter-spacing:.01em;
+    box-shadow:0 6px 20px -12px rgba(143,119,255,.3);
+  }
+  .pill .dot{width:8px;height:8px;border-radius:999px}
+  .pill .dot.l{background:var(--lilac-500)}
+  .pill .dot.p{background:var(--pink-500)}
+  .pill .dot.m{background:var(--mint-400)}
+
+  header.hero{
+    position:relative;padding:32px 36px 34px;
+    background:linear-gradient(180deg,#ffffff 0%, #f7f2ff 100%);
+    border-radius:32px;box-shadow:var(--shadow);
+    overflow:hidden;border:1px solid #ffffff;margin-bottom:22px;
+  }
+  header.hero::before{
+    content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;
+    background:linear-gradient(135deg,#cdbdff, #ffc9e1 45%, #c5efdc 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+            mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;
+    opacity:.6;pointer-events:none;
+  }
+  .hero-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .logo{
+    width:76px;height:76px;border-radius:26px;
+    background:
+      radial-gradient(120% 120% at 15% 15%, #fff 0%, #ebe3ff 45%, transparent 70%),
+      conic-gradient(from 220deg at 50% 50%, #8f77ff, #ff6fa5, #ffd166, #67d7aa, #8f77ff);
+    box-shadow:0 18px 36px -18px #8f77ffaa, inset 0 -6px 0 #cdbdff88;
+    display:grid;place-items:center;position:relative;
+    animation:logoFloat 6s ease-in-out infinite;
+  }
+  @keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px) rotate(2deg)}}
+  .logo .shield{
+    width:46px;height:46px;background:#fff;border-radius:14px;display:grid;place-items:center;
+    box-shadow:0 10px 22px -12px #8f77ff99;
+    color:var(--lilac-500);font-size:22px;
+  }
+  .hero h1{
+    margin:18px 0 6px;
+    font-family:'Fraunces',serif;font-weight:900;
+    font-size:clamp(34px,6vw,56px);letter-spacing:-.02em;line-height:1.02;
+    background:linear-gradient(120deg,#8f77ff 0%,#ef518c 55%,#37b080 110%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero .sub{max-width:640px;color:var(--ink-700);font-size:16px;margin:0 0 18px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:13.5px;color:var(--ink-500);font-weight:500}
+  .meta-chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:linear-gradient(180deg,#fff,#f7f2ff);border:1px solid #ebe3ff}
+  .meta-chip .ico{font-size:15px}
+  .hand{font-family:'Caveat',cursive;font-weight:700;font-size:22px;color:var(--lilac-500);transform:rotate(-3deg);display:inline-block;margin-left:8px}
+
+  /* Summary ribbon */
+  .ribbon{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 22px;
+  }
+  .ribbon .card{
+    background:#ffffffcc;border:1px solid #ffffff;
+    border-radius:20px;padding:16px 16px 14px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    box-shadow:0 10px 30px -18px rgba(143,119,255,.35);
+    position:relative;overflow:hidden;
+    animation:cardBob 7s ease-in-out infinite;
+  }
+  .ribbon .card:nth-child(2){animation-delay:-1.6s}
+  .ribbon .card:nth-child(3){animation-delay:-3.2s}
+  .ribbon .card:nth-child(4){animation-delay:-4.8s}
+  @keyframes cardBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+  .ribbon .ic{
+    width:34px;height:34px;border-radius:12px;display:grid;place-items:center;
+    font-size:15px;margin-bottom:8px;color:#fff;
+  }
+  .ribbon .c1 .ic{background:linear-gradient(135deg,#8f77ff,#cdbdff)}
+  .ribbon .c2 .ic{background:linear-gradient(135deg,#ff6fa5,#ffc9e1)}
+  .ribbon .c3 .ic{background:linear-gradient(135deg,#67d7aa,#c5efdc)}
+  .ribbon .c4 .ic{background:linear-gradient(135deg,#ffd166,#fff4cf);color:#9a6000}
+  .ribbon h5{margin:0 0 4px;font-family:'Fraunces',serif;font-size:15px;color:var(--ink-900)}
+  .ribbon p{margin:0;font-size:12.5px;color:var(--ink-500);line-height:1.45}
+
+  .paper{
+    background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);
+    padding:28px 32px 30px;position:relative;overflow:hidden;border:1px solid #ffffff;
+  }
+  .paper::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.65;
+    background-image:
+      linear-gradient(var(--lilac-200) 1px,transparent 1px),
+      linear-gradient(90deg,#ffffffaa 1px,transparent 1px);
+    background-size:100% 32px,32px 100%;
+    mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 90%,transparent 100%);
+  }
+  .tape{
+    position:absolute;width:180px;height:28px;left:50%;top:-10px;transform:translateX(-50%) rotate(2.4deg);
+    background:repeating-linear-gradient(90deg,#ebe3ff,#ebe3ff 6px,#f2ebff 6px,#f2ebff 12px);
+    opacity:.88;border-left:1px dashed #ffffff;border-right:1px dashed #ffffff;
+    box-shadow:0 6px 10px -8px #8f77ff99;
+  }
+  .tape.left{left:auto;right:auto;left:-36px;top:42%;width:120px;height:22px;transform:rotate(-88deg);background:repeating-linear-gradient(90deg,#ffd0e3,#ffd0e3 6px,#ffd7e7 6px,#ffd7e7 12px)}
+  .paper h2{
+    font-family:'Fraunces',serif;font-weight:700;
+    font-size:clamp(22px,3.4vw,30px);letter-spacing:-.01em;
+    color:var(--ink-900);margin:0 0 10px;display:flex;align-items:center;gap:12px
+  }
+  .paper h2 .num{
+    display:inline-grid;place-items:center;width:34px;height:34px;border-radius:12px;
+    background:linear-gradient(135deg,#cdbdff,#ffc9e1);color:#fff;font-size:16px;font-weight:700;
+    box-shadow:0 8px 16px -10px #ef518c99;transform:rotate(3deg);
+  }
+  .paper h3{font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--ink-900);margin:18px 0 6px}
+  .paper p,.paper li{color:var(--ink-700);font-size:15px}
+  .paper p{margin:0 0 10px}
+  .paper ul,.paper ol{margin:0 0 10px 20px;padding:0}
+  .paper li{margin:0 0 5px}
+  .paper strong{color:var(--ink-900)}
+  .paper code{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:700;color:var(--lilac-500);
+    padding:1px 8px;border-radius:999px;background:var(--lilac-100);border:1px solid #ebe3ff
+  }
+  .paper table{
+    width:100%;border-collapse:separate;border-spacing:0;margin:8px 0 14px;border-radius:18px;overflow:hidden;
+    background:#fff;border:1px solid #ebe3ff;font-size:14.5px;
+  }
+  .paper th,.paper td{padding:10px 12px;text-align:left;border-bottom:1px solid #f4edff}
+  .paper th{background:linear-gradient(180deg,#f7f2ff,#f0e8ff);color:var(--ink-900);font-family:'Fraunces',serif;font-weight:700}
+  .paper tr:last-child td{border-bottom:0}
+  .paper blockquote{
+    margin:18px 0 22px;padding:18px 22px 18px 22px;border-radius:22px;
+    background:linear-gradient(180deg,#f7f2ff,#f0e8ff);
+    border:1px dashed #cdbdff;position:relative;color:var(--ink-700)
+  }
+  .paper blockquote::before{
+    content:"“";position:absolute;top:-22px;left:14px;font-family:'Fraunces',serif;font-size:68px;line-height:1;color:var(--lilac-400)
+  }
+  .section{position:relative;z-index:1;padding:10px 0 2px;border-top:1px dashed #e5d5ff}
+  .section:first-of-type{border-top:0;padding-top:0}
+
+  .contact{
+    margin-top:22px;padding:20px 22px;border-radius:22px;
+    background:linear-gradient(135deg,#ffffff,#f7f2ff);
+    border:1px solid #ebe3ff;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center
+  }
+  .contact h4{margin:0;font-family:'Fraunces',serif;font-size:20px}
+  .contact p{margin:4px 0 0;color:var(--ink-500);font-size:14px}
+  .contact a.mail{
+    display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;
+    background:linear-gradient(135deg,#8f77ff,#ff6fa5);color:#fff;font-weight:700;text-decoration:none;
+    box-shadow:0 12px 26px -12px #8f77ffcc
+  }
+  .contact a.mail:hover{transform:translateY(-1px) scale(1.01)}
+
+  /* CCPA / rights steps */
+  .rights{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:6px 0 14px;
+  }
+  .rights .step{
+    padding:16px;border-radius:18px;background:linear-gradient(180deg,#fff,#fdfbff);
+    border:1px solid #ebe3ff;position:relative;
+  }
+  .rights .step .n{
+    position:absolute;top:-12px;left:16px;
+    width:26px;height:26px;border-radius:999px;display:grid;place-items:center;
+    background:linear-gradient(135deg,#8f77ff,#ff6fa5);color:#fff;font-size:13px;font-weight:800;
+    box-shadow:0 8px 14px -10px #ef518c99;
+  }
+  .rights h5{margin:12px 0 4px;font-family:'Fraunces',serif;font-size:16px}
+  .rights p{margin:0;font-size:13.5px;color:var(--ink-500)}
+
+  footer.foot{text-align:center;margin-top:22px;color:var(--ink-500);font-size:13px}
+  footer.foot .line{
+    margin:0 auto 14px;height:2px;width:64px;border-radius:999px;
+    background:linear-gradient(90deg,#8f77ff,#ff6fa5,#67d7aa)
+  }
+
+  /* Reveal on scroll — progressive enhancement.
+     Default state: VISIBLE (so content never disappears if JS fails / observer threshold misses).
+     If JS boots successfully, <html class="has-reveal"> toggles .reveal to hidden-then-animated. */
+  .reveal{opacity:1;transform:none;transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.1,1)}
+  html.has-reveal .reveal{opacity:0;transform:translateY(14px)}
+  .reveal.show,
+  html.has-reveal .reveal.show{opacity:1;transform:none}
+
+  @media (max-width:720px){
+    .ribbon{grid-template-columns:repeat(2,1fr)}
+    .rights{grid-template-columns:1fr}
+  }
+  @media (max-width:640px){
+    .wrap{padding:28px 16px 54px}
+    header.hero{padding:22px 20px 24px;border-radius:24px}
+    .paper{padding:22px 18px 24px;border-radius:20px}
+    .tape.left{display:none}
+    .contact{grid-template-columns:1fr}
+    .hero-meta{gap:10px}
+    .ribbon{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="blob b1" style="top:-120px;right:-100px"></div>
+    <div class="blob b2" style="top:32%;left:-140px"></div>
+    <div class="blob b3" style="bottom:-120px;right:10%"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="heart h1"></div>
+    <div class="heart h2"></div>
+    <div class="heart h3"></div>
+    <div class="spark s1"></div>
+    <div class="spark s2"></div>
+    <div class="spark s3"></div>
+    <div class="spark s4"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="badge-row reveal">
+      <span class="pill"><span class="dot l"></span>Serious about your privacy</span>
+      <span class="pill"><span class="dot p"></span>Last updated · September 7, 2026</span>
+      <span class="pill"><span class="dot m"></span>Stays on your device first</span>
+    </div>
+
+    <header class="hero reveal">
+      <div class="hero-top">
+        <div class="logo" aria-hidden="true"><div class="shield">🛡️</div></div>
+        <div>
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:22px;color:var(--pink-500)">Your photos = your business</div>
+          <div style="color:var(--ink-500);font-size:14px;font-weight:500">the Havi privacy promise</div>
+        </div>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="sub">
+        Havi is a tiny, cozy scrapbook app that lives on your phone. We believe the photos you paste, the stickers you cut out,
+        and the pages you create are <strong>yours</strong> — not ours. This policy explains exactly what data Havi touches,
+        what stays on your device, and what we ever receive. <span class="hand">It’s short, we promise.</span>
+      </p>
+      <div class="hero-meta">
+        <span class="meta-chip"><span class="ico">🗓️</span> Effective: September 7, 2026</span>
+        <span class="meta-chip"><span class="ico">📱</span> iOS · iPhone</span>
+        <span class="meta-chip"><span class="ico">✉️</span> devhavistudio@outlook.com</span>
+      </div>
+    </header>
+
+    <div class="ribbon reveal">
+      <div class="card c1">
+        <div class="ic">🔐</div>
+        <h5>Local-first</h5>
+        <p>Your pages, stickers and library live on-device by default.</p>
+      </div>
+      <div class="card c2">
+        <div class="ic">🚫</div>
+        <h5>No tracking</h5>
+        <p>We never sell, share, or profile you for advertising.</p>
+      </div>
+      <div class="card c3">
+        <div class="ic">💠</div>
+        <h5>In-app choices</h5>
+        <p>Any system-level prompts are triggered by features you opt into.</p>
+      </div>
+      <div class="card c4">
+        <div class="ic">🎯</div>
+        <h5>Minimal data</h5>
+        <p>Havi only stores what the creative experience actually needs.</p>
+      </div>
+    </div>
+
+    <div class="paper reveal">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="tape left" aria-hidden="true"></div>
+
+      <section class="section">
+        <h2><span class="num">1</span> Overview</h2>
+        <p>
+          This Privacy Policy describes how <strong>Havi Studio</strong> (“we”, “us”, or “Havi”) collects, uses, and shares information
+          when you use the <strong>Havi</strong> mobile application (the “App”). By downloading or using Havi, you agree to the practices described here.
+          A separate Terms of Service document for the App is also available and may be reviewed separately.
+        </p>
+        <blockquote>
+          Rule #1 of Havi: <strong>if we don’t need it, we don’t collect it.</strong> The photos you import, the stickers you cut, and the pages you build
+          stay on <em>your</em> device unless you explicitly export them or share them.
+        </blockquote>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">2</span> What we collect &amp; what we don’t</h2>
+        <h3>2.1 Information we store on your device (Havi never sees it)</h3>
+        <ul>
+          <li><strong>Pages &amp; stickers.</strong> Your scrapbook pages, cutout PNGs, sticker names, and draft data are saved in Havi’s local sandbox on your iPhone using on-disk storage.</li>
+          <li><strong>Coin balance.</strong> Your remaining Havi coins, including complimentary and purchased balances, are stored locally on the device using a combination of in-app preferences and Apple-provided keychain entries. This data is not synced to any external server operated by us.</li>
+          <li><strong>Preferences.</strong> Things like your last-used paper style, editor zoom level, and any “Don’t ask again” choices.</li>
+        </ul>
+
+        <h3>2.2 Information processed through Apple’s systems (not on our servers)</h3>
+        <ul>
+          <li><strong>In-App Purchases.</strong> When you buy a coin pack in the Havi Coin Shop, the transaction is processed by Apple’s App Store and StoreKit. Apple shares a purchase receipt with your device so Havi can restore purchased coin bundles. We do not store credit-card numbers or billing details — ever.</li>
+          <li><strong>App Store analytics.</strong> Apple may share aggregated, anonymised metrics with developers (installs, sessions, crash summaries) under App Store Connect. We use these only to fix crashes and improve quality.</li>
+          <li><strong>Exported images.</strong> When you save or share a page, the image may flow through standard iOS share extensions or system frameworks. Havi does not upload these images to our own cloud.</li>
+        </ul>
+
+        <h3>2.3 What we definitely do NOT collect</h3>
+        <ul>
+          <li>Contact lists, phone numbers, email addresses, or social graphs.</li>
+          <li>Precise geolocation or GPS history.</li>
+          <li>Health, biometric, or sensitive demographic data.</li>
+          <li>Keystroke logs, screen recordings, or private content from other apps.</li>
+          <li>Advertising IDs for third-party ad targeting. Havi does not include ad SDKs that collect IDFA for personalized advertising.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">3</span> Coins &amp; purchases</h2>
+        <p>
+          Havi’s coin system unlocks downloads and shares. Coins are digital items managed locally and by Apple’s StoreKit.
+          We do <strong>not</strong> operate a central wallet or a user login server. There is no Havi account. Your balance lives on
+          your device. The App’s Terms of Service document describes refunds and how failures are handled, and is available separately for review.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">4</span> Sharing &amp; export flows</h2>
+        <p>
+          When you tap <code>Share</code>, Havi renders the page to a temporary PNG file and hands it to the iOS share sheet.
+          From that point, whatever you do with the shared image is governed by the receiving app’s own terms and privacy policy —
+          for example, sharing to Instagram means Meta’s rules apply. Havi has no visibility into how the recipient uses the image.
+        </p>
+        <p>
+          When you tap <code>Download</code>, Havi writes the rendered page PNG to a local destination of the system’s choosing. After that, the file behaves like any
+          other exported media on your device — only <strong>you</strong> control where it goes next.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">5</span> Children’s privacy</h2>
+        <p>
+          Havi is a general-audience creative app and is not marketed specifically to children under the age of 13 (or the equivalent minimum age in
+          your jurisdiction). We do not knowingly collect personal information from children. If a parent or guardian believes that Havi has accidentally
+          received personal data about a child, please contact us at the email below — we will promptly delete any such material from our possession within a reasonable timeframe.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">6</span> Your privacy rights</h2>
+        <p>
+          Because most of your data lives on your device, the easiest way to access, correct, or delete it is right in the app:
+        </p>
+        <div class="rights">
+          <div class="step"><span class="n">1</span><h5>Access</h5><p>Open the book, shelf, or coin shop — everything we know about is already visible to you.</p></div>
+          <div class="step"><span class="n">2</span><h5>Edit</h5><p>Rename stickers, edit page titles, or rearrange pages directly inside the editor.</p></div>
+          <div class="step"><span class="n">3</span><h5>Delete</h5><p>To wipe everything, delete Havi from your device. Its sandbox is removed along with the app by iOS.</p></div>
+        </div>
+        <p>
+          Residents of the EEA, the UK, California, and other jurisdictions with data protection laws may have additional rights regarding any
+          <em>personal information we actually hold</em>. Right now Havi does not operate an account or cloud backend, so the answer to a typical
+          access request is usually “we don’t hold any personal data on you.” But if you believe otherwise, email us — we will respond promptly.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">7</span> Retention</h2>
+        <ul>
+          <li><strong>On-device data:</strong> we keep nothing. It stays with you until you delete the app or clear its documents.</li>
+          <li><strong>Support correspondence:</strong> if you email us, we keep your message and reply for as long as reasonably needed to resolve your question, and no longer than 24 months unless a law requires more.</li>
+          <li><strong>Aggregated App Store analytics:</strong> kept under Apple’s standard App Store Connect retention policy, outside our control.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">8</span> Security</h2>
+        <p>
+          We take reasonable precautions to protect whatever little information we handle. The Havi app stores its local data in the standard iOS
+          sandbox with data protection enabled; support emails travel over TLS; and the app ships with no network-backed upload of your pages or stickers.
+          No method of transmission over the Internet is 100% secure, however — so please keep your device passcode enabled and your Apple ID secure.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">9</span> Changes to this Privacy Policy</h2>
+        <p>
+          We may update this Policy from time to time. If we make material changes, we will bump the <em>Last updated</em> date above and show a gentle
+          in-app notice the next time you open Havi. Your continued use after the effective date of the revised Policy means you accept the new terms.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">10</span> Contact us</h2>
+        <p>
+          If you have questions about this Policy, want to exercise a privacy right, spot something that seems off, or just want to say hi —
+          email our tiny, friendly team. We read every message.
+        </p>
+      </section>
+
+      <div class="contact reveal">
+        <div>
+          <h4>Privacy support mailbox 💌</h4>
+          <p>We aim to reply within two business days. Please include “Havi Privacy” in the subject so we see it fast.</p>
+        </div>
+        <a class="mail" href="mailto:devhavistudio@outlook.com?subject=Havi%20Privacy%20Policy">
+          <span>✉️</span> devhavistudio@outlook.com
+        </a>
+      </div>
+    </div>
+
+    <footer class="foot reveal">
+      <div class="line"></div>
+      © <span id="y"></span> Havi Studio · All rights reserved · Shh — your memories are safe with us.
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Progressive reveal: only hide items after JS boots (guarantees visibility if JS fails).
+  try {
+    var html = document.documentElement;
+    html.classList.add('has-reveal');
+    var alreadyShown = new WeakSet();
+    var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    var showEl = function(el){
+      if (!el || alreadyShown.has(el)) return;
+      alreadyShown.add(el);
+      el.classList.add('show');
+    };
+    // Pass 1 — immediately show anything already inside viewport right now.
+    var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+    reveals.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < vh * 0.95 && r.bottom > 0) showEl(el);
+    });
+    // Pass 2 — IntersectionObserver for the rest, with a very forgiving threshold.
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { showEl(e.target); io.unobserve(e.target); }
+        });
+      },{threshold:[0, 0.02, 0.05], rootMargin:'80px 0px'});
+      reveals.forEach(function(el){ if (!alreadyShown.has(el)) io.observe(el); });
+    } else {
+      reveals.forEach(showEl);
+    }
+    // Final safety net: after layout settles, force any remaining viewport items to show.
+    setTimeout(function(){
+      reveals.forEach(function(el){
+        var r = el.getBoundingClientRect();
+        if (r.top < (window.innerHeight||800) * 0.98 && r.bottom > 0) showEl(el);
+      });
+    }, 300);
+  } catch(e) {
+    // Any JS error → expose everything immediately.
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('show'); });
+  }
+</script>
+</body>
+</html>

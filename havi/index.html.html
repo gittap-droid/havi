@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#ffd6e8" />
+<title>Havi · Terms of Service</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,600&family=Inter:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --pink-50:#fff6fb;
+    --pink-100:#ffe7f1;
+    --pink-200:#ffd0e3;
+    --pink-300:#ffb1cd;
+    --pink-500:#ff6fa5;
+    --pink-600:#ef518c;
+    --lilac-200:#ebe3ff;
+    --lilac-400:#b7a3ff;
+    --lilac-500:#8f77ff;
+    --mint-200:#d7f5e7;
+    --mint-400:#67d7aa;
+    --butter-200:#fff4cf;
+    --butter-400:#ffd166;
+    --ink-900:#3b2442;
+    --ink-700:#5d4566;
+    --ink-500:#7e6b87;
+    --ink-300:#b7a9bd;
+    --paper:#fffaf7;
+    --shadow:0 20px 60px -24px rgba(239,81,140,.28), 0 8px 20px -10px rgba(143,119,255,.22);
+    --radius:26px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink-900);
+    background:
+      radial-gradient(1200px 700px at 12% -10%, #ffe6f2 0%, transparent 60%),
+      radial-gradient(900px 600px at 100% 0%, #ebe3ff 0%, transparent 55%),
+      radial-gradient(900px 700px at 50% 100%, #d7f5e7 0%, transparent 55%),
+      linear-gradient(180deg,#fff6fb 0%, #f4edff 55%, #eaf9f1 100%);
+    min-height:100vh;
+    line-height:1.62;
+    overflow-x:hidden;
+  }
+  a{color:var(--pink-600)}
+  /* Floating decoration */
+  .sky{
+    position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;
+  }
+  .blob,.cloud,.heart,.spark{position:absolute;border-radius:999px;filter:blur(0.5px)}
+  .blob{
+    width:520px;height:520px;border-radius:40% 60% 55% 45%/55% 45% 60% 40%;
+    background:radial-gradient(circle at 30% 30%, #ffd1e6, #ffb1cd33 60%, transparent 70%);
+    animation:blob 18s ease-in-out infinite;
+  }
+  .blob.b2{width:440px;height:440px;background:radial-gradient(circle at 60% 40%, #dcd2ff, #c2b4ff33 60%, transparent 70%);animation-duration:24s;animation-direction:reverse}
+  .blob.b3{width:380px;height:380px;background:radial-gradient(circle at 40% 50%, #c8f1de, #67d7aa22 60%, transparent 70%);animation-duration:28s}
+  @keyframes blob{
+    0%,100%{transform:translate(0,0) rotate(0) scale(1)}
+    33%{transform:translate(30px,-25px) rotate(20deg) scale(1.05)}
+    66%{transform:translate(-25px,30px) rotate(-15deg) scale(.98)}
+  }
+  .cloud{
+    background:linear-gradient(180deg,#ffffff 0%,#fff6fb 100%);
+    box-shadow:0 20px 40px -24px rgba(143,119,255,.35), inset 0 -6px 0 #ffe6f2;
+    opacity:.9;
+    border-radius:100px;
+    animation:float 14s ease-in-out infinite;
+  }
+  .cloud::before,.cloud::after{
+    content:"";position:absolute;border-radius:999px;background:inherit;box-shadow:inherit
+  }
+  .cloud.c1{width:210px;height:80px;top:7%;left:6%;animation-delay:-2s}
+  .c1::before{width:110px;height:110px;left:30px;top:-40px}
+  .c1::after{width:130px;height:70px;left:110px;top:10px;border-radius:60px}
+  .cloud.c2{width:170px;height:64px;top:14%;right:8%;animation-delay:-7s;animation-duration:20s}
+  .c2::before{width:90px;height:90px;left:20px;top:-32px}
+  .c2::after{width:96px;height:52px;left:90px;top:12px;border-radius:40px}
+  .cloud.c3{width:240px;height:74px;bottom:10%;left:-4%;animation-delay:-4s;animation-duration:22s;transform:scale(.9)}
+  .c3::before{width:120px;height:120px;left:40px;top:-44px}
+  .c3::after{width:140px;height:60px;left:130px;top:10px;border-radius:50px}
+  @keyframes float{
+    0%,100%{transform:translateY(0) translateX(0)}
+    50%{transform:translateY(-14px) translateX(10px)}
+  }
+  .heart{
+    width:18px;height:18px;background:var(--pink-500);opacity:.55;
+    transform:rotate(-45deg);
+    border-radius:4px 4px 0 0;
+    animation:heart 9s ease-in-out infinite;
+  }
+  .heart::before,.heart::after{content:"";position:absolute;width:18px;height:18px;background:inherit;border-radius:999px}
+  .heart::before{top:9px;left:0}
+  .heart::after{top:0;left:9px}
+  .h1{top:32%;left:14%;animation-delay:-.5s}
+  .h2{top:54%;right:12%;transform:rotate(-45deg) scale(1.25);opacity:.45;background:var(--lilac-500);animation-duration:11s;animation-delay:-3s}
+  .h3{bottom:18%;left:38%;transform:rotate(-45deg) scale(.8);opacity:.6;background:var(--mint-400);animation-duration:13s;animation-delay:-5s}
+  @keyframes heart{
+    0%,100%{translate:0 0 rotate(var(--r,0deg))}
+    50%{translate:0 -16px rotate(4deg)}
+  }
+  .spark{
+    width:14px;height:14px;background:var(--butter-400);
+    clip-path:polygon(50% 0,61% 38%,100% 50%,61% 62%,50% 100%,39% 62%,0 50%,39% 38%);
+    filter:drop-shadow(0 2px 6px #ffd166aa);
+    animation:sparkle 6s ease-in-out infinite;
+  }
+  .s1{top:22%;left:24%;animation-delay:-1s}
+  .s2{top:38%;right:22%;transform:scale(1.5);animation-delay:-2.4s}
+  .s3{bottom:22%;right:16%;animation-delay:-3.7s}
+  .s4{bottom:40%;left:18%;animation-delay:-1.6s;transform:scale(.7)}
+  @keyframes sparkle{
+    0%,100%{transform:scale(1) rotate(0);opacity:.9}
+    50%{transform:scale(1.4) rotate(18deg);opacity:.4}
+  }
+
+  /* Layout */
+  .wrap{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:44px 24px 68px}
+  .badge-row{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+  .pill{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:8px 16px;border-radius:999px;
+    background:#ffffffcc;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+    border:1px solid #ffffff99;
+    color:var(--ink-700);font-size:13px;font-weight:600;letter-spacing:.01em;
+    box-shadow:0 6px 20px -12px rgba(239,81,140,.25);
+  }
+  .pill .dot{width:8px;height:8px;border-radius:999px}
+  .pill .dot.p{background:var(--pink-500)}
+  .pill .dot.l{background:var(--lilac-500)}
+  .pill .dot.m{background:var(--mint-400)}
+  header.hero{
+    position:relative;
+    padding:32px 36px 34px;
+    background:linear-gradient(180deg,#ffffff 0%, #fff8fd 100%);
+    border-radius:32px;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+    border:1px solid #ffffff;
+    margin-bottom:22px;
+  }
+  header.hero::before{
+    content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;
+    background:linear-gradient(135deg,#ffc9e1, #cdbdff 45%, #c5efdc 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+            mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;
+    opacity:.6;pointer-events:none;
+  }
+  .hero-top{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .logo{
+    width:76px;height:76px;border-radius:26px;
+    background:
+      radial-gradient(120% 120% at 15% 15%, #fff 0%, #ffe6f2 45%, transparent 70%),
+      conic-gradient(from 220deg at 50% 50%, #ff6fa5, #b7a3ff, #67d7aa, #ffd166, #ff6fa5);
+    box-shadow:0 18px 36px -18px #ef518caa, inset 0 -6px 0 #ffc9e188;
+    display:grid;place-items:center;position:relative;
+    animation:logoFloat 6s ease-in-out infinite;
+  }
+  @keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px) rotate(-2deg)}}
+  .logo .star{
+    width:44px;height:44px;background:#fff;border-radius:999px;display:grid;place-items:center;
+    box-shadow:0 10px 22px -12px #ef518c99;
+    color:var(--pink-600);font-family:'Fraunces',serif;font-style:italic;font-weight:900;font-size:26px;
+    transform:rotate(-8deg);
+  }
+  .hero h1{
+    margin:18px 0 6px;
+    font-family:'Fraunces',serif;
+    font-weight:900;
+    font-size:clamp(34px,6vw,56px);
+    letter-spacing:-.02em;line-height:1.02;
+    background:linear-gradient(120deg,#ef518c 0%,#8f77ff 55%,#37b080 110%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero .sub{
+    max-width:620px;color:var(--ink-700);font-size:16px;margin:0 0 18px
+  }
+  .hero-meta{
+    display:flex;flex-wrap:wrap;gap:14px;align-items:center;
+    font-size:13.5px;color:var(--ink-500);font-weight:500
+  }
+  .meta-chip{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:8px 14px;border-radius:999px;
+    background:linear-gradient(180deg,#fff,#fff6fb);
+    border:1px solid #ffe6f2;
+  }
+  .meta-chip .ico{font-size:15px}
+  .hand{
+    font-family:'Caveat',cursive;font-weight:700;font-size:22px;color:var(--pink-600);
+    transform:rotate(-3deg);display:inline-block;margin-left:8px
+  }
+  /* Paper content */
+  .paper{
+    background:var(--paper);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:28px 32px 30px;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #ffffff;
+  }
+  .paper::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.65;
+    background-image:
+      linear-gradient(var(--pink-100) 1px,transparent 1px),
+      linear-gradient(90deg,#ffffffaa 1px,transparent 1px);
+    background-size:100% 32px,32px 100%;
+    mask-image:linear-gradient(180deg,transparent 0,#000 12%,#000 90%,transparent 100%);
+  }
+  .tape{
+    position:absolute;width:180px;height:28px;left:50%;top:-10px;transform:translateX(-50%) rotate(-2.6deg);
+    background:repeating-linear-gradient(90deg,#ffd0e3,#ffd0e3 6px,#ffd7e7 6px,#ffd7e7 12px);
+    opacity:.88;border-left:1px dashed #ffffff;border-right:1px dashed #ffffff;
+    box-shadow:0 6px 10px -8px #ef518c99;
+  }
+  .tape.right{left:auto;right:-36px;top:46%;width:120px;height:22px;transform:rotate(92deg);background:repeating-linear-gradient(90deg,#ebe3ff,#ebe3ff 6px,#f2ebff 6px,#f2ebff 12px)}
+  .paper h2{
+    font-family:'Fraunces',serif;font-weight:700;
+    font-size:clamp(22px,3.4vw,30px);letter-spacing:-.01em;
+    color:var(--ink-900);margin:0 0 10px;
+    display:flex;align-items:center;gap:12px
+  }
+  .paper h2 .num{
+    display:inline-grid;place-items:center;
+    width:34px;height:34px;border-radius:12px;
+    background:linear-gradient(135deg,#ffc9e1,#cdbdff);
+    color:#fff;font-size:16px;font-family:'Inter',sans-serif;font-weight:700;
+    box-shadow:0 8px 16px -10px #8f77ff99;
+    transform:rotate(-3deg);
+  }
+  .paper h3{
+    font-family:'Fraunces',serif;font-weight:700;font-size:18px;
+    color:var(--ink-900);margin:18px 0 6px
+  }
+  .paper p,.paper li{color:var(--ink-700);font-size:15px}
+  .paper p{margin:0 0 10px}
+  .paper ul,.paper ol{margin:0 0 10px 20px;padding:0}
+  .paper li{margin:0 0 5px}
+  .paper strong{color:var(--ink-900)}
+  .paper blockquote{
+    margin:18px 0 22px;padding:18px 22px 18px 22px;border-radius:22px;
+    background:linear-gradient(180deg,#fff8fd,#fff1f7);
+    border:1px dashed #ffc9e1;
+    position:relative;color:var(--ink-700)
+  }
+  .paper blockquote::before{
+    content:"“";position:absolute;top:-22px;left:14px;
+    font-family:'Fraunces',serif;font-size:68px;line-height:1;color:var(--pink-300)
+  }
+  .kbd{
+    font-family:'Fraunces',serif;font-style:italic;font-weight:700;color:var(--pink-600)
+  }
+  .section{position:relative;z-index:1;padding:10px 0 2px;border-top:1px dashed #ffd6e8}
+  .section:first-of-type{border-top:0;padding-top:0}
+  /* Coin card */
+  .coin-card{
+    display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;
+    padding:16px 20px;margin:12px 0 16px;border-radius:22px;
+    background:
+      radial-gradient(240px 120px at 100% 0%, #fff4cf55 0, transparent 60%),
+      linear-gradient(180deg,#fff9ef,#fff3e2);
+    border:1px solid #ffe6bf;
+    box-shadow:0 16px 30px -22px #ef518c77;
+  }
+  .coin-card .txt p{margin:2px 0 0;color:var(--ink-700);font-size:14.5px}
+  .coin-card h4{margin:0;font-family:'Fraunces',serif;font-size:20px;color:var(--ink-900)}
+  .coin{
+    width:62px;height:62px;border-radius:999px;
+    background:
+      radial-gradient(120% 120% at 20% 20%, #fff 0, transparent 45%),
+      linear-gradient(180deg,#ffe08a,#ffbf3c);
+    display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:900;font-size:28px;color:#9a6000;
+    box-shadow:0 18px 28px -18px #ff9f1c, inset 0 -5px 0 #e7a518, inset 0 0 0 3px #fff7cf;
+    position:relative;
+    animation:coinSpin 7s ease-in-out infinite;
+  }
+  @keyframes coinSpin{0%,100%{transform:rotateY(0)}50%{transform:rotateY(25deg) translateY(-3px)}}
+  /* Footer card */
+  .contact{
+    margin-top:22px;padding:20px 22px;border-radius:22px;
+    background:linear-gradient(135deg,#fff,#f4edff);
+    border:1px solid #e7ddff;
+    display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center
+  }
+  .contact h4{margin:0;font-family:'Fraunces',serif;font-size:20px}
+  .contact p{margin:4px 0 0;color:var(--ink-500);font-size:14px}
+  .contact a.mail{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:12px 18px;border-radius:999px;
+    background:linear-gradient(135deg,#ff6fa5,#8f77ff);color:#fff;font-weight:700;
+    box-shadow:0 12px 26px -12px #8f77ffcc;text-decoration:none
+  }
+  .contact a.mail:hover{transform:translateY(-1px) scale(1.01)}
+  footer.foot{
+    text-align:center;margin-top:22px;color:var(--ink-500);font-size:13px
+  }
+  footer.foot .line{
+    margin:0 auto 14px;height:2px;width:64px;border-radius:999px;
+    background:linear-gradient(90deg,#ff6fa5,#8f77ff,#67d7aa)
+  }
+
+  /* Reveal on scroll — progressive enhancement.
+     Default state: VISIBLE (so content never disappears if JS fails / observer threshold misses).
+     If JS boots successfully, <html class="has-reveal"> toggles .reveal to hidden-then-animated. */
+  .reveal{opacity:1;transform:none;transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.1,1)}
+  html.has-reveal .reveal{opacity:0;transform:translateY(14px)}
+  .reveal.show,
+  html.has-reveal .reveal.show{opacity:1;transform:none}
+
+  @media (max-width:640px){
+    .wrap{padding:28px 16px 54px}
+    header.hero{padding:22px 20px 24px;border-radius:24px}
+    .paper{padding:22px 18px 24px;border-radius:20px}
+    .tape.right{display:none}
+    .contact{grid-template-columns:1fr}
+    .hero-meta{gap:10px}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="blob b1" style="top:-120px;left:-120px"></div>
+    <div class="blob b2" style="top:30%;right:-140px"></div>
+    <div class="blob b3" style="bottom:-120px;left:10%"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="heart h1"></div>
+    <div class="heart h2"></div>
+    <div class="heart h3"></div>
+    <div class="spark s1"></div>
+    <div class="spark s2"></div>
+    <div class="spark s3"></div>
+    <div class="spark s4"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="badge-row reveal">
+      <span class="pill"><span class="dot p"></span>Soft &amp; playful</span>
+      <span class="pill"><span class="dot l"></span>Last updated · September 7, 2026</span>
+      <span class="pill"><span class="dot m"></span>Made with ♥ for your scrapbook</span>
+    </div>
+
+    <header class="hero reveal">
+      <div class="hero-top">
+        <div class="logo" aria-hidden="true"><div class="star">H</div></div>
+        <div>
+          <div style="font-family:'Caveat',cursive;font-weight:700;font-size:22px;color:var(--lilac-500)">A cozy little agreement</div>
+          <div style="color:var(--ink-500);font-size:14px;font-weight:500">for the Havi scrapbook app</div>
+        </div>
+      </div>
+      <h1>Terms of Service</h1>
+      <p class="sub">
+        Welcome to Havi, your cotton-candy scrapbook of sparkly memories. These Terms are the gentle
+        house rules for our cozy little app — they keep the sticker shelf tidy, the coins fair, and the pages safe.
+        Please read them before you start pasting. <span class="hand">Thanks!</span>
+      </p>
+      <div class="hero-meta">
+        <span class="meta-chip"><span class="ico">🗓️</span> Effective: September 7, 2026</span>
+        <span class="meta-chip"><span class="ico">🌍</span> Worldwide</span>
+        <span class="meta-chip"><span class="ico">✉️</span> devhavistudio@outlook.com</span>
+      </div>
+    </header>
+
+    <div class="paper reveal">
+      <div class="tape" aria-hidden="true"></div>
+      <div class="tape right" aria-hidden="true"></div>
+
+      <section class="section">
+        <h2><span class="num">1</span> Accepting the Terms</h2>
+        <p>
+          By downloading, opening, or using <strong>Havi</strong> (the “App”), published by <strong>Havi Studio</strong>, you agree to these
+          <span class="kbd">Terms of Service</span>. A separate Privacy Policy also applies to the App — please review it as well.
+          If you do not agree, please do not use the App.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">2</span> What Havi lets you do</h2>
+        <p>Havi is a personal creative scrapbook tool. You may use it to:</p>
+        <ul>
+          <li>Import photos you own or are lawfully allowed to use and turn them into pages.</li>
+          <li>Cut out stickers with a rectangle or freehand lasso and keep them in your shelf.</li>
+          <li>Arrange stickers on paper-styled pages, save locally, or export outside the App.</li>
+          <li>Use the coin balance system to unlock downloads and shares, and buy more coins in the Coin Shop.</li>
+        </ul>
+        <blockquote>
+          Everything you create inside Havi <strong>stays yours</strong>. We claim no ownership over your pages, photos, or stickers.
+        </blockquote>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">3</span> Coins, purchases &amp; refunds</h2>
+        <div class="coin-card" aria-hidden="false">
+          <div class="txt">
+            <h4>Havi coin economy</h4>
+            <p>Every download or share costs 20 coins. New users receive 200 complimentary coins to get started.</p>
+          </div>
+          <div class="coin">¢</div>
+        </div>
+        <ol>
+          <li><strong>Buying coins.</strong> Coin packs are sold through Apple’s In‑App Purchase system at the prices shown in the Coin Shop.</li>
+          <li><strong>Refunds.</strong> Used coins are non‑refundable once an export completes successfully. Refunds for unused coin‑pack purchases are handled by Apple via your App Store purchase history — we cannot reverse them directly. If a download fails on our side (rendering error, not a cancelled share), the 20 coins are refunded automatically.</li>
+          <li><strong>Complimentary coins.</strong> The 200 welcome coins are a one‑time gift and are not restored across devices or after reinstall.</li>
+        </ol>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">4</span> Acceptable use</h2>
+        <p>
+          Use Havi kindly and lawfully. Do not create, store, or share content that is illegal, harmful, abusive, hateful, discriminatory,
+          harassing, sexually explicit, deceptive, or that infringes on another person’s rights — including copyrighted material you
+          are not lawfully entitled to use.
+        </p>
+        <p>
+          Do not reverse engineer, copy, de‑compile, repackage, resell, automate, tamper with coin balances, bypass in‑app purchases,
+          or attack the App or any services behind it.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">5</span> Your content &amp; the rights you keep</h2>
+        <p>
+          Havi does not claim ownership over the pages, stickers, photos, or layouts you create. You retain full copyright and
+          intellectual property rights in your content.
+        </p>
+        <p>
+          To make the App actually work, you grant Havi Studio a <strong>limited, non‑exclusive, revocable license</strong> only to
+          host, render, cache, and transmit your content inside the App (for example, to turn a page into a PNG, to show a sticker
+          on the canvas, or to send it through the iOS share sheet at your direction). This license ends automatically when you
+          delete the content or uninstall Havi.
+        </p>
+        <p>
+          You are solely responsible for the content you make and share through Havi. We do not pre‑screen or endorse user content.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">6</span> The license we grant <em>to you</em></h2>
+        <p>
+          Subject to these Terms, Havi Studio gives you a <strong>limited, personal, non‑commercial, non‑transferable license</strong>
+          to run one copy of Havi on a single Apple iPhone you own, solely for your own creative scrapbooking use.
+        </p>
+        <p>
+          You may not copy, distribute, sublicense, rent, sell, or make derivative works of the App; remove any proprietary notices;
+          or circumvent any technical protection, coin mechanism, or in‑app purchase feature.
+        </p>
+        <p>
+          These Terms are between you and Havi Studio — not with Apple. Apple is not responsible for the App, its content, maintenance,
+          support, warranties, or product‑liability / consumer‑protection / IP claims, all of which are Havi Studio’s responsibility to
+          the extent required by law. Your use must also comply with the Apple App Store Terms of Service applicable to end users.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">7</span> Disclaimers &amp; liability limits</h2>
+        <p>
+          To the fullest extent permitted by applicable law, Havi is provided <strong>“as is” and “as available,” with all faults</strong>,
+          without warranties of any kind — express, implied, or statutory — including merchantability, fitness for a particular purpose,
+          and non‑infringement. We do not guarantee uninterrupted, error‑free operation or that any output will be accurate or suitable
+          for your needs. Your use is at your own risk.
+        </p>
+        <p>
+          In no event will Havi Studio or its team be liable for any indirect, incidental, special, consequential, or punitive damages;
+          loss of profits, data, content, or opportunity; or cost of substitute services. The total aggregate liability for any claim
+          will not exceed the greater of (a) the total amount you actually paid Havi Studio directly in the last twelve months, or
+          (b) USD $100. These limits do not apply to death or personal injury, fraud, or any other liability that cannot be excluded
+          by applicable law.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">8</span> Termination</h2>
+        <p>
+          You may end these Terms at any time by stopping use and uninstalling Havi.
+        </p>
+        <p>
+          We may suspend or end your right to use Havi if you materially breach these Terms, if your conduct is harmful to others,
+          if we are required to do so by law, or if we discontinue the App. Where permitted, we will try to give you reasonable notice.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">9</span> Changes to these Terms &amp; other fine print</h2>
+        <p>
+          We may update these Terms occasionally. Your continued use of Havi after the revised effective date means you accept the changes.
+          If a change is material (for example, pricing, new restrictions, or expanded rights), we will announce it inside the App with
+          an updated “Last updated” date, and where required by law we will seek your explicit consent or offer you the chance to stop using
+          the App.
+        </p>
+        <p>
+          If any part of these Terms is found unenforceable, the rest remains in full force. No delay in exercising a right operates as
+          a waiver of that right. Together with the Privacy Policy, these Terms are the entire agreement between you and Havi Studio
+          about Havi, and supersede any earlier discussions on the subject.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2><span class="num">10</span> Governing law &amp; contact</h2>
+        <p>
+          These Terms are governed by the laws of the <strong>People’s Republic of China</strong>, excluding its conflict‑of‑laws rules.
+          Before filing any formal claim, please send a detailed description to the support email below and allow thirty (30) calendar
+          days for good‑faith discussion. Disputes unresolved after that period will go to the competent courts at Havi Studio’s
+          principal place of business, without prejudice to either party’s right to seek injunctive relief for intellectual‑property
+          or confidential‑information protection.
+        </p>
+      </section>
+
+      <div class="contact reveal">
+        <div>
+          <h4>Questions? Say hi 👋</h4>
+          <p>For TOS support, coin issues, or takedown requests, email our small, friendly team. We usually reply within two business days.</p>
+        </div>
+        <a class="mail" href="mailto:devhavistudio@outlook.com?subject=Havi%20Terms%20of%20Service">
+          <span>✉️</span> devhavistudio@outlook.com
+        </a>
+      </div>
+    </div>
+
+    <footer class="foot reveal">
+      <div class="line"></div>
+      © <span id="y"></span> Havi Studio · All rights reserved · Crafted with cotton candy, washi tape, and sparkles.
+    </footer>
+  </div>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  // Progressive reveal: only hide items after JS boots (guarantees visibility if JS fails).
+  try {
+    var html = document.documentElement;
+    html.classList.add('has-reveal');
+    var alreadyShown = new WeakSet();
+    var reveals = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    var showEl = function(el){
+      if (!el || alreadyShown.has(el)) return;
+      alreadyShown.add(el);
+      el.classList.add('show');
+    };
+    // Pass 1 — immediately show anything already fully inside viewport right now.
+    // (Catches iframe / WKWebView / cached-load cases where IntersectionObserver might not fire on mount.)
+    var vh = window.innerHeight || document.documentElement.clientHeight || 800;
+    reveals.forEach(function(el){
+      var r = el.getBoundingClientRect();
+      if (r.top < vh * 0.95 && r.bottom > 0) showEl(el);
+    });
+    // Pass 2 — IntersectionObserver for the rest, with a very forgiving threshold.
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { showEl(e.target); io.unobserve(e.target); }
+        });
+      },{threshold:[0, 0.02, 0.05], rootMargin:'80px 0px'});
+      reveals.forEach(function(el){ if (!alreadyShown.has(el)) io.observe(el); });
+    } else {
+      reveals.forEach(showEl);
+    }
+    // Final safety net: after layout settles, force any remaining viewport items to show.
+    setTimeout(function(){
+      reveals.forEach(function(el){
+        var r = el.getBoundingClientRect();
+        if (r.top < (window.innerHeight||800) * 0.98 && r.bottom > 0) showEl(el);
+      });
+    }, 300);
+  } catch(e) {
+    // Any JS error → expose everything immediately.
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('show'); });
+  }
+</script>
+</body>
+</html>
